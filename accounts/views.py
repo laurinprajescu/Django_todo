@@ -10,6 +10,7 @@ class UserView(APIView):
     """
     UserView handles the requests made to `/accounts/`
     """
+    permission_classes = ()
 
     def post(self, request):
         """
